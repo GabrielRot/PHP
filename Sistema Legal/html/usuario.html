@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+  </head>
+  <body>
+    <form action="#acao" method="POST">
+      <div class="form-group col-6 mt-3">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome.." name="nome" required="required" value="#nome">
+      </div>
+      <div class="form-group col-6 mt-3">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="seuemail@email.com" name="email" aria-describedby="emailHelp" required="required" value="#email">
+      </div>
+      <div class="form-group col-6 mt-3">
+        <label for="celular">Celular</label>
+        <input type="text" class="form-control" id="celular" placeholder="(00) 0000-0000" name="celular" required="required" value="#celular">
+      </div>
+      <div class="form-group col-6 mt-3">
+        <label for="login">Login</label>
+        <input type="text" class="form-control" id="login" name="login" required="required" value="#login">
+      </div>
+      <div class="form-group col-6 mt-3">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" id="senha" name="senha" required="required" value="#senha">
+      </div>
+      <div class="form-group col-6 mt-3">
+        <button name="submit" type="submit" class="btn btn-primary">Salvar</button>
+      </div>
+      <div>
+        <input name="id" type="hidden" value="#id">
+        <input name="op" type="hidden" value="#op">
+      </div>
+    </form>
+  </body>
+</html>
