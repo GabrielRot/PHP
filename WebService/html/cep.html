@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Link para o CSS personalizado -->
+  </head>
+  <body class="bg-dark text-light d-flex align-items-center justify-content-center vh-100">
+    <div class="card bg-secondary text-light" style="width: 20rem; border-radius: 15px;">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Buscar CEP</h3>
+        <form id="formulario" action="php/cep.php" method="POST">
+          <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep" class="form-control bg-dark text-light" id="cep" placeholder="Digite seu CEP" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Pesquisar</button>
+        </form>
+        <hr class="my-4 bg-light"> <!-- Linha divisora dentro do card -->
+        <div class="dados text-center">#resultado</div>
+      </div>
+    </div>
+    
+    <!-- Script do Bootstrap e jQuery
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+      document.getElementById('formulario').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio do formulário
+        const cep = document.getElementById('cep').value;
+        document.querySelector('.dados').innerText = `Você pesquisou o CEP: ${cep}`;
+      });
+    </script> -->
+  </body>
+</html>
